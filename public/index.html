@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Login</h2>
+
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+
+    <button onclick="login()">Login</button>
+
+    <p style="margin-top:10px;">Don't have account?</p>
+    <button onclick="openRegister()">Register</button>
+  </div>
+
+  <!-- REGISTER MODAL -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <h2>Register</h2>
+
+      <input id="regUsername" placeholder="Username" />
+      <input id="regPassword" type="password" placeholder="Password" />
+
+      <button onclick="register()">Create Account</button>
+      <button onclick="closeRegister()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
